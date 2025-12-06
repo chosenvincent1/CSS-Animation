@@ -7,8 +7,8 @@ It is designed to help beginners understand how CSS animations work, how to defi
 CSS animations let you smoothly change CSS properties over time.
 They are made of two main parts:
 
-1. `@keyframes`
-`@keyframes` defines the stages of an animation:
+## 1. `@keyframes`
+   `@keyframes` defines the stages of an animation:
 ```
 @keyframes bounce {
   from {
@@ -31,81 +31,79 @@ Or using percentages for more complex motion:
 }
 ```
 
-2. Animation Properties
+## 2. Animation Properties
 Animation properties control how the animation behaves when applied to an element. Below are all the important animation properties and what they do:
 
-- animation-name
+### animation-name
 The name of the keyframes animation.
 ```
 animation-name: bounce;
 ```
 
-- animation-duration
+### animation-duration
 How long it takes to complete one animation cycle.
 ```
 animation-duration: 2s;
 ```
 
-- animation-timing-function
-Controls the speed curve of the animation.
-
-Examples:
-linear
-ease
-ease-in
-ease-out
-ease-in-out
+### animation-timing-function
+Controls the speed curve of the animation. Examples:
+- linear
+- ease
+- ease-in
+- ease-out
+- ease-in-out
 steps(n)
-cubic-bezier(x1, y1, x2, y2)
+- cubic-bezier(x1, y1, x2, y2)
 ```
 animation-timing-function: ease-in-out;
 ```
 
-animation-delay
+### animation-delay
 How long to wait before the animation starts.
 ```
 animation-delay: 1s;
 ```
 
-animation-iteration-count
+### animation-iteration-count
 How many times the animation should repeat.
 Values:
-1
-2
-infinite
+- 1
+- 2
+- infinite
 ```
 animation-iteration-count: infinite;
 ```
 
-- animation-direction
+### animation-direction
 Controls how the animation runs on each cycle.
 Options:
-normal
-reverse
-alternate
-alternate-reverse
+- normal
+- reverse
+- alternate
+- alternate-reverse
 ```
 animation-direction: alternate;
 ```
 
-- animation-fill-mode
+### animation-fill-mode
 Defines the style before and after the animation runs.
 Values:
-none
-forwards
-backwards
-both
+- none
+- forwards
+- backwards
+- both
 ```
 animation-fill-mode: forwards;
 ```
 
-- animation-play-state
+### animation-play-state
 Used to pause or resume animations.
 ```
 animation-play-state: paused;
 ```
 
-- Shorthand
+### Shorthand
 You can combine the properties like this:
 ```
 animation: bounce 1.5s ease-in-out infinite alternate forwards;
