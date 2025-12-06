@@ -1,0 +1,26 @@
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: colorChange 3s infinite alternate ;
+}
+
+@keyframes colorChange {
+    0% {background: red;}
+    50% {background: purple; }
+    100% {background: yellow;}
+}

@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: moveToRight 2s ease-in-out alternate-reverse;
+}
+
+@keyframes moveToRight {
+    from {left: 0;}
+    to {left: 200px; }
+}
